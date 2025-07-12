@@ -1,0 +1,131 @@
+
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --accent-color: #ff3d3d;
+  --card-bg: #222;
+  --btn-bg: #333;
+  --form-bg: #222;
+}
+body.light {
+  --bg-color: #f9f9f9;
+  --text-color: #111;
+  --accent-color: #ff3d3d;
+  --card-bg: #fff;
+  --btn-bg: #ddd;
+  --form-bg: #eee;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: var(--card-bg);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+#themeToggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+}
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 100px 50px;
+}
+.text-block h1 {
+  font-size: 56px;
+}
+.text-block p {
+  font-size: 20px;
+}
+.link-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+.link-bar a {
+  background: var(--btn-bg);
+  color: var(--text-color);
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.project-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+}
+.slider-section {
+  padding: 60px 20px;
+}
+.slider-container {
+  max-width: 600px;
+  margin: auto;
+}
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}

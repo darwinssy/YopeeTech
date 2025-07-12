@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YopeeTech</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">YopeeTech</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <img src="https://images.pexels.com/photos/4317224/pexels-photo-4317224.jpeg" alt="Portrait" class="hero-bg" />
+    <div class="hero-content">
+      <div class="text-block">
+        <h1>YopeeTech</h1>
+        <p>Entertainment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Link Bar -->
+  <section class="link-bar-section fade-in">
+    <div class="link-bar">
+      <a href="https://www.shutterstock.com/g/DarwinNft/sets" target="_blank">📁 Portfolio</a>
+      <a href="https://wa.me/+6283840280671" target="_blank">💬 WhatsApp</a>
+      <a href="https://www.instagram.com/ikall_1945?igsh=MW50dTg4d3YxbnExOQ==" target="_blank">📸 Instagram</a>
+      <a href="#about">ℹ️ About</a>
+      <a href="#news">📰 News</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section fade-in">
+    <h2>About YopeeTech</h2>
+    <p>YopeeTech adalah pengembang digital kreatif yang fokus pada solusi website, photografer dan produk digital berkualitas tinggi. Kami percaya pada desain minimalis dan performa maksimal.</p>
+  </section>
+
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h3 id="modal-title">Judul</h3>
+      <p id="modal-desc">Deskripsi proyek</p>
+    </div>
+  </div>
+
+  <!-- News -->
+  <section id="news" class="section fade-in">
+    <h2>Latest News</h2>
+    <p>📢 YopeeTech merilis Website v2.0 — lebih minimalis!</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact Us</h2>
+    <p>Ingin kerja sama atau konsultasi? Isi form di bawah:</p>
+    <form onsubmit="sendWA(event)">
+      <input type="text" id="name" placeholder="Nama Anda" required />
+      <input type="text" id="message" placeholder="Pesan Anda" required />
+      <button type="submit">Kirim via WhatsApp</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
